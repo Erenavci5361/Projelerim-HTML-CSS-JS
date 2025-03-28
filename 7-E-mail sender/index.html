@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Email Gönder</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">Hoşgeldiniz <span>Creative</span> Hub!</h1>
+                <p class="paragraph">Aklınıza takılan herhangi bir konuda danışmak için aşağıdaki formu doldurabilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Merhaba, Arkadaş!</h2>
+            <p>Email gönderme formumuza hoş geldiniz!</p>
+            <form>
+                <div class="form-group">
+                    <label for="to">Alıcı:</label>
+                    <input type="text" id="to" name="to" required autocomplete="off" placeholder="Ornek@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Konu:</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off"
+                        placeholder="İş Birliği Talebi">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" required spellcheck="false" autocomplete="off"
+                        placeholder="Mesajınızı buraya yazın..."></textarea>
+                </div>
+                <div class="form-group result-container">
+                    <p class="result"></p>
+                    <button type="button" class="send-btn">Email Gönder</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
